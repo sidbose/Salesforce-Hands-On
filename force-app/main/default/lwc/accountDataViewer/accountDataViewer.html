@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Seach Account Data">
+        <lightning-input type="text" label="Account Name" onchange={handleNameChange}></lightning-input>
+        <lightning-input type="text" label="Industry" onchange={handleIndustryChange}></lightning-input>
+        <lightning-button variant="brand" label="Search" onclick={handleSearch}></lightning-button>
+    </lightning-card>
+
+    <div style="height: 300px;">
+        <lightning-datatable key-field="keyfield" data={data} columns={columns}></lightning-datatable>
+    </div>
+</template>
